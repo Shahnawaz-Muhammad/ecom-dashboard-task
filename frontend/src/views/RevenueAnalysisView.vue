@@ -37,7 +37,7 @@ export default {
 
     onMounted(async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/sales/summary")
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/sales/summary`)
         console.log("summary", res.data)
         totalOrders.value = res.data.totalOrders
         totalRevenue.value = res.data.totalRevenue

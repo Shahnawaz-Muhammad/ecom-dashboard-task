@@ -72,14 +72,14 @@ export default {
         })
 
         const fetchCategories = async () => {
-            const res = await axios.get('http://localhost:8000/api/products/categories')
+            const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/products/categories`)
             console.log("categoryy", res.data)
             categories.value = res.data
         }
 
         const fetchChartData = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/sales', {
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/sales`, {
                     params: {
                         period: selectedPeriod.value,
                         category: selectedCategory.value

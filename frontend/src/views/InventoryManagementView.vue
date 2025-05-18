@@ -141,7 +141,7 @@ export default {
       if (event.colDef.field === 'stock') {
         const newStock = event.newValue;
         try {
-          await axios.put(`http://localhost:8000/api/products/${event.data._id}`, { stock: newStock });
+          await axios.put(`${import.meta.env.VITE_API_URL}/api/products/${event.data._id}`, { stock: newStock });
           alert('Stock updated successfully');
         } catch (err) {
           alert('Failed to update stock');
@@ -154,7 +154,7 @@ export default {
       if (params.colDef.headerName === 'Actions' && params.event.target.classList.contains('btn-delete')) {
         if (confirm(`Delete product "${params.data.name}"?`)) {
           try {
-            await axios.delete(`http://localhost:8000/api/products/${params.data._id}`);
+            await axios.delete(`${import.meta.env.VITE_API_URL}/api/products/${params.data._id}`);
             alert('Product deleted Successfully');
             fetchProducts();
           } catch (error) {
