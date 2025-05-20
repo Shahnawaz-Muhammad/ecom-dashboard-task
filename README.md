@@ -1,4 +1,4 @@
-## H2 - A full-stack inventory dashboard in Vue 3(frontend) and Express.js(backend).
+## - A full-stack inventory dashboard in Vue 3(frontend) and Express.js(backend).
 
 inventory-management/
 ├── backend/     
@@ -6,7 +6,7 @@ inventory-management/
 └── frontend/     
          # Vue
 
-## H3 - Backend Setup:
+## - Backend Setup:
 
 Navigate to the backend folder:
 
@@ -22,7 +22,7 @@ MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/inventory-d
 <!-- .Start the server -->
 npm start
 
-## H3 - Frontend Setup:
+## - Frontend Setup:
 
 Navigate to the frontend folder:
 
