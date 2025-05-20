@@ -1,28 +1,37 @@
-Inventory Management Dashboard  
-A full-stack inventory dashboard in Vue 3(frontend) and Express.js(backend).
+## H2 - A full-stack inventory dashboard in Vue 3(frontend) and Express.js(backend).
 
 inventory-management/
-├── backend/      # Express + MongoDB API
-└── frontend/     # Vue
+├── backend/     
+         # Express + MongoDB API
+└── frontend/     
+         # Vue
 
-Backend Setup:
+## H3 - Backend Setup:
+
 Navigate to the backend folder:
 
 cd backend
+
 npm install
+
 Create a .env file:
 <!-- .env file -->
 PORT=8000
+
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/inventory-db?
 <!-- .Start the server -->
 npm start
 
-Frontend Setup:
+## H3 - Frontend Setup:
+
 Navigate to the frontend folder:
 
 cd frontend
+
 npm install
+
 Create a .env file:
+
 touch .env
 <!-- .env file -->
 VITE_API_URL=http://localhost:8000
